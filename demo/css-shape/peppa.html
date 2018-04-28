@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Shape Demo by yisi</title>
+  <style>
+  @font-face {
+    font-family: "peppa";
+    src: url("./img/PEPPA_revision4BOLD.woff") format("woff"),
+         url("./img/PEPPA_revision4BOLD.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  h1 {
+    font-size: 6em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    text-align: center;
+    font-family: "peppa", sans-serif;
+    color: #eb99c2;
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+  }
+
+  body {
+    font-family: "Fort Book", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    background: #8db85e url(./img/bg.jpg) 50% 0 no-repeat;
+    background-size: contain;
+  }
+
+  main {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img1 {
+    float: left;
+    -webkit-shape-outside: url(./img/Peppa-Pig.png);
+    shape-outside: url(./img/Peppa-Pig.png);
+    shape-margin: 1em;
+    margin-top: 3em;
+  }
+
+  .img2 {
+    float: right;
+    -webkit-shape-outside: url(./img/peppa-pig-logo.png);
+    shape-outside: url(./img/peppa-pig-logo.png);
+  }
+
+  p {
+    color: #fff;
+    font-size: 1.8em;
+    text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.3);
+  }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Peppa Pig's Home</h1>
+    <img class="img1" src="./img/Peppa-Pig.png">
+    <p> “Peppa Pig: Live in South Africa” - in partnership with black - is an action-packed show, designed to deliver to young fans of ALL ages an unforgettable first, live theatre experience.</p>
+    <p>This fully immersive live musical stage show, featuring all your favourite interactive sing-a-longs, will have fans laughing, cheering and dancing – just like Peppa!</p>
+    <p>Tickets available at Computicket from R199 with discount family packages available.</p>
+    <img class="img2" src="./img/peppa-pig-logo.png">
+    <p>Entertainment phenomenon, Peppa Pig - global superstar amongst the family preschool set – is hitting the road for her first ever South African theatrical tour.</p>
+    <p>This one-of-a-kind live stage experience – with incredible life-sized puppets and amazing costumed characters – brings Peppa Pig to life in a whole new way for South African audiences. Come join Peppa, George, Mummy Pig, Daddy Pig and more in a fantastic adventure filled with buckets of surprises and plenty of muddy puddles!</p>
+  </main>
+</body>
+</html>
